@@ -1,17 +1,16 @@
-# 🧠 Offline AI Assistant
+# 🧠 Offline AI Chatbot
 
-An intelligent offline AI chatbot with PDF-based question answering built using Streamlit and Ollama.  
-This application runs locally without requiring continuous internet access and allows users to interact with AI and extract information from documents.
+An intelligent offline AI chatbot built using **Streamlit** and **Ollama**.  
+This application runs locally and allows users to have context-aware conversations without requiring continuous internet access.
 
 ---
 
 ## 🚀 Features
 
-- Offline Chatbot – Interact with AI without internet  
-- PDF Question Answering – Upload notes and ask questions  
-- Context-Aware Responses – Maintains conversation history  
-- Clean UI – Built using Streamlit  
-- Optimized Performance – Uses lightweight local model (phi)  
+- 💬 Offline AI Chatbot (runs locally)
+- 🧠 Context-aware conversation (remembers chat history)
+- 🎨 Clean and responsive UI using Streamlit
+- ⚡ Lightweight and optimized using local LLM (phi model)
 
 ---
 
@@ -20,48 +19,44 @@ This application runs locally without requiring continuous internet access and a
 - Python  
 - Streamlit  
 - Ollama (Local LLM)  
-- pypdf  
 
 ---
 
 ## ⚙️ How It Works
 
 1. User enters a query  
-2. If a PDF is uploaded:
-   - Text is extracted and split into chunks  
-   - Relevant content is selected based on the query  
-   - AI answers using only that context  
-3. Otherwise:
-   - AI responds using chat history  
+2. Chat history is maintained for context  
+3. Query is sent to a local AI model using Ollama  
+4. AI generates a response and displays it in the UI  
 
 ---
 
 ## ▶️ Run Locally
 
-Step 1: Install dependencies  
+### Step 1: Install dependencies
 pip install -r requirements.txt  
 
-Step 2: Run the app  
-python -m streamlit run app.py  
+### Step 2: Run the app
+python -m streamlit run final_ai.py  
 
-Step 3: Start chatting  
+### Step 3: Start chatting
 - Ask general questions  
-- Upload PDFs and query them  
+- Get structured AI responses  
 
 ---
 
 ## ⚠️ Note
 
-- This project uses Ollama, so the AI model runs locally  
+- This project uses **Ollama**, so the AI model runs locally  
 - Internet is required only for initial setup (model download)  
-- Voice feature was explored but removed due to PyAudio compatibility issues with Python 3.13  
+- The app works only when the system is running locally  
 
 ---
 
 ## 📈 Future Improvements
 
-- Semantic search (FAISS / embeddings)  
-- Voice assistant integration  
-- Web deployment with cloud models  
-- Mobile-friendly UI  
+- 🌐 Deployable version using cloud APIs  
+- 🎤 Voice assistant integration  
+- ⚡ Faster response optimization  
+- 🎨 Enhanced UI animations  
 
